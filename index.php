@@ -1,6 +1,6 @@
 <?php
     require "mail.php";
-
+    mail($toEmail,$subject,$body,$headers);
 ?>
 
 
@@ -13,7 +13,7 @@
         <title>Mail server</title>
     </head>
     <body>
-        <a href="#" id="trigger">Start working with server</a>
+        <a href="#" id="trigger">Start sending an email</a>
         <center>
             <div id="modal" class="modal">
                 <div class="modal-content">
@@ -24,7 +24,9 @@
                     <label for="text">Your name</label> <br> <br>
             <input type="text" name="name" id="" placeholder="Your Name"> <br> <br>
             <label for="Email">Your Email</label> <br> <br>
-            <input type="Email" name="email" id="" placeholder="please enter a valid Email adress"> <br> <br>
+            <input type="Email" name="email" id="" placeholder="please enter your Email adress"> <br> <br>
+            <label>Recipient Email</label> <br> <br>
+            <input type="email" name="recepient" placeholder="enter the recepients email"> <br> <br>
             <label for="message"> Message </label> <br> <br>
             <!-- <input type="text"> -->
             <textarea name="message" id="" cols="40" rows="10" placeholder="Draft your message"></textarea> <br> <br>
@@ -35,7 +37,10 @@
         </center>
             
         <style>
-            span{
+
+
+    span{
+        color: black;
         opacity: 0;
         animation-name: fade;
         animation-duration: 2s;
@@ -57,13 +62,15 @@ body{
         margin: 0;
         cursor: pointer;
         box-sizing: border-box; 
-        padding: 150px 0 0 0;
-        background: url("images/pexels\ \(5\).jpg");
+        padding: 10px 0 0 0;
+        background: url("images/pexels\ \(3\).jpg");
         background-size: cover;
         background-repeat: no-repeat;
         overflow: hidden;}
       *{
           transition: all 1s cubic-bezier(1, 0, 0, 1);
+          color: transparent;
+          /* background-color: black; */
     }
     #trigger{
         background-color: #f33e41;
@@ -129,7 +136,7 @@ a{
 form{
     opacity: 0;
     position: relative;
-    top: 20px;
+    top: 1px;
     animation: fade 2s ease-out;
     animation-delay: 3.5s;
     animation-fill-mode: forwards;
@@ -207,6 +214,6 @@ button{
 }
         </style>
         
-        <script src="script.js"></script>
+        <script src="main.js"></script>
         </body>
         </html>

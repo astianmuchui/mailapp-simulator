@@ -6,12 +6,12 @@
     $headers = "MIME-Version: 1.0" ."\r\n";
     $headers .="Content-Type:text/html;charset=UTF-8" . "\r\n";
     $headers .= "From: " .$name. "<".$email.">". "\r\n";
-    $toEmail = "sebastianmuchui79@gmail.com";
+    $toEmail = $_POST['recepient'];
     $subject = "form submission";
 
     
     $body = '
-        <h1>contact request from '.$name.'</h1>
+        <h1>you have received an email from <br> '.$name.'</h1>
         <h2>'.$email.'</h2>
         <h3>Message :</h3> <br>
         <p> '.$message.' </p>
@@ -28,7 +28,6 @@
         }
 
     }
-
 
     mail($toEmail , $subject , $body ,$headers);
 ?>

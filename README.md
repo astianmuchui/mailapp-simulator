@@ -1,4 +1,4 @@
-# mail-server-system
+ PROJECT 725
 my own simple mail sending service.
 
 the system was neccesary because:

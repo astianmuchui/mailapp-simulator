@@ -9,5 +9,8 @@ send an email to a loved one or business partner urgently.
 
 #Now a confirmation message from the developer is available if email is sent to the recepient.
 #You can write the subject of the email
+.
 //this idea was inspired by a real life problem
-	in case you have a suggestion or maybe a question send me an email
+	.
+in case you have a suggestion or maybe a question send me an email (astianseb730@gmail.com)
+

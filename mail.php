@@ -7,9 +7,7 @@
     $headers .="Content-Type:text/html;charset=UTF-8" . "\r\n";
     $headers .= "From: " .$name. "<".$email.">". "\r\n";
     $toEmail = $_POST['recepient'];
-    $subject = "form submission";
-
-    
+    $subject = $_POST['subject'];    
     $body = '
         <h1>you have received an email from <br> '.$name.'</h1>
         <h2>'.$email.'</h2>

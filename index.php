@@ -27,6 +27,8 @@
             <input type="Email" name="email" id="" placeholder="please enter your Email adress"> <br> <br>
             <label>Recipient Email</label> <br> <br>
             <input type="email" name="recepient" placeholder="enter the recepients email"> <br> <br>
+            <label>Subject</label> <br> <br>
+            <input type="text" name="subject" placeholder="subject ."> <br> <br>
             <label for="message"> Message </label> <br> <br>
             <!-- <input type="text"> -->
             <textarea name="message" id="" cols="40" rows="10" placeholder="Draft your message"></textarea> <br> <br>
@@ -66,7 +68,7 @@ body{
         background: url("images/pexels\ \(3\).jpg");
         background-size: cover;
         background-repeat: no-repeat;
-        overflow: hidden;}
+        overflow-x: hidden;}
       *{
           transition: all 1s cubic-bezier(1, 0, 0, 1);
           color: transparent;
@@ -82,7 +84,7 @@ a{
     background-color: rgb(16, 245, 8);
     border: 1px solid transparent;
     border-radius: 5%;
-    padding: 10px 20px;position: relative;margin-top: 30%;left: 30%; 
+    padding: 10px 20px;position: relative;margin-top: 3%;left: 10%; 
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .modal{
@@ -91,10 +93,10 @@ a{
      width: 100%;
      height: 50vh;
      z-index: 3;
-     margin: 13% 0 0 0;
+     margin: 7% 0 0 0;
     }
     .modal-content{
-        height: 400px;
+        height: 600px;
         width: 600px;
         background-color: rgba(0, 0, 0,0.7);
         border: 5px solid #f33e41;
@@ -131,12 +133,12 @@ a{
             {
                 0%{
                     width: 0px;height: 0;}25%{width: 0;height: 0;}50%{width: 600px;height: 0;}
-            100%{height: 400px;opacity: 1;}
+            100%{height: 600px;opacity: 1;}
 }
 form{
     opacity: 0;
     position: relative;
-    top: 1px;
+    top: 50px;
     animation: fade 2s ease-out;
     animation-delay: 3.5s;
     animation-fill-mode: forwards;

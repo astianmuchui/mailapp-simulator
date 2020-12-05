@@ -20,3 +20,6 @@ Updates:
 	.
 in case you have a suggestion or maybe a question send me an email (astianseb730@gmail.com)
 
+//Upcoming updates 
+
+attach files below 15mbs (specific because of google standards)

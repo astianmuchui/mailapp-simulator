@@ -1,6 +1,5 @@
  PROJECT 725
-
-my own simple mail sending service.
+. Coded& designed by Seb Astian
 
 the system was neccesary because:
 
@@ -18,7 +17,7 @@ Updates:
 .
 //this idea was inspired by a real life problem
 	.
-in case you have a suggestion or maybe a question send me an email (astianseb730@gmail.com)
+in case you have a suggestion or maybe a question send me an email astianseb730@gmail.com
 
 //Upcoming updates 
 

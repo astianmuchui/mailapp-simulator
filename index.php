@@ -1,25 +1,22 @@
 <?php
-    session_start();
+    define("APP_ROOT","./server/classes.php");
+    
     if(isset($_POST['send'])){
+        require APP_ROOT;
         $name = $_POST['name'];
         $subject = $_POST['subject'];
         $FIRST_EMAIL= $_POST['email'];
         $SECOND_EMAIL = $_POST['recepient'];
         $message = $_POST['message'];
-        $headers = "MIME-Version: 1.0" ."\r\n";
-        $headers .="Content-Type:text/html;charset=UTF-8" . "\r\n";
-        $headers .= "From: " .$name. "<".$FIRST_EMAIL.">". "\r\n";
+        $headers = "From: " .$name. "<".$FIRST_EMAIL.">". "\r\n";
 
         $body = '
         <p>'.$message.'</p>
         ';
-        $control = mail($SECOND_EMAIL,$subject,$body,$headers);
-        if($control){
-          #Transmit sender email to reply page.
-          $_SESSION['sender'] = $FIRST_EMAIL;
-          $_SESSION['recepient'] = $SECOND_EMAIL;
-          header("Location : ./server/reply.php");
-        }
+        $send = new Email;
+        $send->excecute($name,$subject,$FIRST_EMAIL,$SECOND_EMAIL,$message);
+
+        
     }
 ?>
 <!DOCTYPE html>

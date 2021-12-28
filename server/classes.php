@@ -16,7 +16,7 @@ session_start();
          $this->SECOND_EMAIL = $_POST['recepient'];
          $this->message = $_POST['message'];
          $this->headers = "From: " .$name. "<".$FIRST_EMAIL.">". "\r\n";
-         $this->body = '<p>'.$this->message.'</p>';
+         $this->body = $this->message;
          if((!empty($name)) && (!empty($subject)) && (!empty($FIRST_EMAIL))  && (!empty($SECOND_EMAIL)) && (!empty($message)) ){
                if((filter_var(
                   $FIRST_EMAIL

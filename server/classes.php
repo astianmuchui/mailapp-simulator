@@ -1,4 +1,9 @@
 <?php
+ /*
+    Mail app simulator 
+    Authored by Sebastian muchui
+    copyright 2021
+    */
 session_start();
    class Email{
       public $output;

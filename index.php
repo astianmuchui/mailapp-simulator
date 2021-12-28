@@ -24,7 +24,7 @@
 <meta charset="UTF-8">
 <link rel="stylesheet" href="./assets/css/styles.css">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Project 725</title>
+<title>Mail App Simulator</title>
 </head>
 <body>
 <a href="#" id="trigger">Launch</a>

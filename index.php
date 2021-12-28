@@ -1,6 +1,10 @@
 <?php
     define("APP_ROOT","./server/classes.php");
-    
+    /*
+    Mail app simulator 
+    Authored by Sebastian muchui
+    copyright 2021
+    */
     if(isset($_POST['send'])){
         require APP_ROOT;
         $name = $_POST['name'];
